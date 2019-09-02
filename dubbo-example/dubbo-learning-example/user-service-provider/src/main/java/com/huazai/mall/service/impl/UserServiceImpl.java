@@ -2,7 +2,6 @@ package com.huazai.mall.service.impl;
 
 import com.huazai.mall.bean.UserAddress;
 import com.huazai.mall.service.UserService;
-import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.List;
