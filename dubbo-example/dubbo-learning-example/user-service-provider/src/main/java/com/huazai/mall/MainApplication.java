@@ -1,5 +1,7 @@
 package com.huazai.mall;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import java.io.IOException;
 
 public class MainApplication {
