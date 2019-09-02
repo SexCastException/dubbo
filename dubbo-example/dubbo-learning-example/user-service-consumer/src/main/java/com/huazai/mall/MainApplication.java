@@ -1,11 +1,9 @@
-/*
 package com.huazai.mall;
 
 import java.io.IOException;
 
+import com.huazai.mall.service.OrderService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import com.atguigu.gmall.service.OrderService;
 
 public class MainApplication {
 	
@@ -21,4 +19,3 @@ public class MainApplication {
 	}
 
 }
-*/
