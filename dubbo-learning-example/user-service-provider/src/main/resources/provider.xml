@@ -24,6 +24,7 @@
     <!--  服务实现者加入IOC容器 -->
     <bean id="userService" class="com.huazai.mall.service.impl.UserServiceImpl"></bean>
 
+    <!--  连接监控中心 -->
     <dubbo:monitor protocol="registry"></dubbo:monitor>
 
 </beans>
