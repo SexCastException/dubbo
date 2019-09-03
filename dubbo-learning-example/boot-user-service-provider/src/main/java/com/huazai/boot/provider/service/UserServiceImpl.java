@@ -3,10 +3,13 @@ package com.huazai.boot.provider.service;
 
 import com.huazai.mall.bean.UserAddress;
 import com.huazai.mall.service.UserService;
+import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.List;
 
+@com.alibaba.dubbo.config.annotation.Service
+@Service
 public class UserServiceImpl implements UserService {
     public List<UserAddress> getUserAddressList(String s) {
         System.out.println("UserServiceImpl.....old...");
