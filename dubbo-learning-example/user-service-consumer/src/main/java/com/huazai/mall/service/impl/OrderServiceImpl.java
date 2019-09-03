@@ -3,6 +3,8 @@ package com.huazai.mall.service.impl;
 import com.huazai.mall.bean.UserAddress;
 import com.huazai.mall.service.OrderService;
 import com.huazai.mall.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -13,8 +15,9 @@ import java.util.List;
  * <p>
  * 2、让服务消费者去注册中心订阅服务提供者的服务地址
  */
+@Service
 public class OrderServiceImpl implements OrderService {
-    //	@Autowired
+    @Autowired
     UserService userService;
 
     public List<UserAddress> initOrder(String userId) {
@@ -24,6 +27,7 @@ public class OrderServiceImpl implements OrderService {
         for (UserAddress userAddress : addressList) {
             System.out.println(userAddress.getUserAddress());
         }
+        System.out.println(addressList);
         return addressList;
     }
 }

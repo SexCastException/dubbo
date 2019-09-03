@@ -21,6 +21,21 @@
             <artifactId>spring-context</artifactId>
             <version>5.1.4.RELEASE</version>
         </dependency>
+
+        <!--  引入dubbo仓库 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.6.2</version>
+        </dependency>
+
+        <!-- 注册中心使用的是zookeeper，引入操作zookeeper的客户端 -->
+        <!-- dubbo2.5版本之前使用的是zkclient客户端 -->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+            <version>2.12.0</version>
+        </dependency>
     </dependencies>
 
 
