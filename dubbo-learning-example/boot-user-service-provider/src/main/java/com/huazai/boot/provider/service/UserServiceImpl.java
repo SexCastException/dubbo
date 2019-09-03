@@ -1,4 +1,4 @@
-package com.huazai.mall.service.impl;
+package com.huazai.boot.provider.service;
 
 import com.huazai.mall.bean.UserAddress;
 import com.huazai.mall.service.UserService;
