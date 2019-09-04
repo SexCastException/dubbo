@@ -22,9 +22,9 @@ import java.util.List;
 public class OrderServiceImpl implements OrderService {
     // @Autowired
     /**
-     * 从注册中心中远程引用userService服务
+     * 从注册中心中远程引用userService服务，url：dubbo直连，消费者者可以绕过注册中心直接和提供者直连
      */
-    @Reference(url = "zookeeper://127.0.0.1:2181")
+    @Reference/*(url = "127.0.0.1:20881")*/
     UserService userService;
 
     public List<UserAddress> initOrder(String userId) {
