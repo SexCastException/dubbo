@@ -8,6 +8,9 @@ import org.springframework.stereotype.Service;
 import java.util.Arrays;
 import java.util.List;
 
+/*
+使用dubbo的Service注解暴露服务
+ */
 @com.alibaba.dubbo.config.annotation.Service
 @Service
 public class UserServiceImpl implements UserService {

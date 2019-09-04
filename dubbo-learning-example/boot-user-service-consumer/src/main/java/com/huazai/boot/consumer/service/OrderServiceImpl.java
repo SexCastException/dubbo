@@ -1,5 +1,6 @@
 package com.huazai.boot.consumer.service;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.huazai.mall.bean.UserAddress;
 import com.huazai.mall.service.OrderService;
 import com.huazai.mall.service.UserService;
@@ -16,13 +17,14 @@ import java.util.List;
  * <p>
  * 2、让服务消费者去注册中心订阅服务提供者的服务地址
  */
-/*
-使用dubbo的Service注解暴露服务
- */
-@com.alibaba.dubbo.config.annotation.Service
+
 @Service
 public class OrderServiceImpl implements OrderService {
-    @Autowired(required = false)
+    // @Autowired
+    /**
+     * 从注册中心中远程引用userService服务
+     */
+    @Reference(url = "zookeeper://127.0.0.1:2181")
     UserService userService;
 
     public List<UserAddress> initOrder(String userId) {
