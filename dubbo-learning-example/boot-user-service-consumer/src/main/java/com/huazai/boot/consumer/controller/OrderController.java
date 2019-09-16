@@ -2,7 +2,6 @@ package com.huazai.boot.consumer.controller;
 
 import com.huazai.mall.bean.UserAddress;
 import com.huazai.mall.service.OrderService;
-import com.huazai.mall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +19,6 @@ public class OrderController {
     @RequestMapping("/initOrder")
     public String initOrder(@RequestParam String userId) {
         List<UserAddress> userAddressList = orderService.initOrder(userId);
-        return userAddressList.toString();
+        return userAddressList + "";
     }
 }
